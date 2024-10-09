@@ -19,8 +19,8 @@ This project is an Online Course Management System designed to facilitate the ma
 - Mobile application support using React Native
 
 ## Technologies Used
-- **Backend**: Spring Boot, JPA
-- **Frontend**: React
+- **Backend**: Spring Boot, JPA, Hibernate
+- **Frontend**: React, Boostrap
 - **Mobile**: React Native
 - **Database**: MySQL
 
