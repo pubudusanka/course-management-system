@@ -30,7 +30,7 @@ This project is an Online Course Management System designed to facilitate the ma
    git clone https://github.com/pubudusanka/online-course-management-system.git
 
 ## Usage
-- Access the application via http://localhost:3000 for the front-end.
+- Access the application via http://localhost:3306 for the front-end.
 - Use Postman or any API client to test the backend API endpoints.
 
 ## API Endpoints
