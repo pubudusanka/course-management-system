@@ -21,8 +21,11 @@ public class Course {
     @OneToMany(mappedBy = "course",cascade = CascadeType.ALL,orphanRemoval = true)
     private List <Lesson> lessons;
 
-    @ManyToMany
-    @JoinTable(name = "course_student",joinColumns = @JoinColumn(name = "course_id"),inverseJoinColumns = @JoinColumn(name = "student_id"))
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "course_student",
+    joinColumns = @JoinColumn(name = "course_id"),
+    inverseJoinColumns = @JoinColumn(name = "student_id")
+    )
     private List<Student> students;
 
 }

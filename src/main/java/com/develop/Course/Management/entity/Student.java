@@ -24,7 +24,7 @@ public class Student {
     @JoinColumn(name = "user_id")
     private User user;
 
-    @ManyToMany(mappedBy = "students")
+    @ManyToMany(mappedBy = "students", cascade = CascadeType.ALL)
     private List<Course> courses;
 
 }
