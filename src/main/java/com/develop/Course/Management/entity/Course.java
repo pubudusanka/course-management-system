@@ -28,4 +28,8 @@ public class Course {
     )
     private List<Student> students;
 
+    public Course(Long id, String title) {
+        this.id = id;
+        this.title = title;
+    }
 }
