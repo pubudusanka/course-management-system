@@ -1,5 +1,4 @@
 package com.develop.Course.Management.entity;
-
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -12,19 +11,16 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 
-public class Student {
+public class User {
+
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     private Long id;
-    private String name;
-    private String email;
+    private String username;
     private String password;
+    private String email;
 
-    @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "user_id")
-    private User user;
-
-    @ManyToMany(mappedBy = "students")
-    private List<Course> courses;
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL,orphanRemoval = true)
+    private List<Student> students;
 
 }
