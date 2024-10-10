@@ -2,7 +2,7 @@ package com.develop.Course.Management.repository;
 
 import com.develop.Course.Management.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
-
+import java.lang.String;
 import java.util.List;
 
 
