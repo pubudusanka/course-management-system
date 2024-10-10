@@ -1,7 +1,5 @@
 package com.develop.Course.Management.dto;
 
-import com.develop.Course.Management.entity.Lesson;
-import com.develop.Course.Management.entity.Student;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -19,6 +17,6 @@ public class CourseDto {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String title;
-    private List <Lesson> lessons;
-    private List <Student> students;
+    private List <LessonDto> lessons;
+    private List <StudentDto> students;
 }

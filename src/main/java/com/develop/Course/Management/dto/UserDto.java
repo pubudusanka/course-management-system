@@ -1,6 +1,5 @@
 package com.develop.Course.Management.dto;
 
-import com.develop.Course.Management.entity.Student;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -21,5 +20,5 @@ public class UserDto {
     private String password;
     private String email;
     private String role;
-    private List<Student> students;
+    private List <StudentDto> students;
 }
