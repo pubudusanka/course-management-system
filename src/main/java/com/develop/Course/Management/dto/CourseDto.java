@@ -20,9 +20,4 @@ public class CourseDto {
     private List <LessonDto> lessons;
     private List <StudentDto> students;
 
-    public CourseDto(Long id, String title) {
-        this.id = id;
-        this.title = title;
-    }
-
 }

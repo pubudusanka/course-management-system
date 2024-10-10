@@ -11,6 +11,5 @@ import java.util.List;
 
 public interface CourseRepository extends JpaRepository<Course, Long> {
     Course findByTitle(String title);
-    Course findById(long id);
     List <Student> findStudentById(@Param("course_id")Long course_id);
 }
