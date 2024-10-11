@@ -84,10 +84,11 @@ public class CourseServiceImpl implements CourseService {
 
     @Override
     public CourseDto findByTitle(String title) {
-        Course course = courseRepository.findByTitle(title);
-        if (course != null) {
-            return modelMapper.map(course,CourseDto.class);
+        Optional <Course> courseOptional = courseRepository.findByTitle(title);
+        if (courseOptional.isPresent()) {
+            return modelMapper.map(courseOptional.get(), CourseDto.class);
+        }else{
+            throw new RuntimeException("Course not found with title: "+ title);
         }
-        throw new RuntimeException("Course not found with title: "+ title);
     }
 }

@@ -8,8 +8,9 @@ import org.springframework.data.repository.query.Param;
 import java.lang.String;
 import java.lang.Long;
 import java.util.List;
+import java.util.Optional;
 
 public interface CourseRepository extends JpaRepository<Course, Long> {
-    Course findByTitle(String title);
+    Optional <Course> findByTitle(String title);
     List <Student> findStudentById(@Param("course_id")Long course_id);
 }
