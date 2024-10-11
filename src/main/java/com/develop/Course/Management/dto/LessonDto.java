@@ -18,5 +18,5 @@ public class LessonDto {
     private String title;
     private String videoUrl;
     private String thumbnailUrl;
-    private Course course;
+    private CourseDto courseDto;
 }

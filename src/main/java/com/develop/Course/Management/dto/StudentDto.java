@@ -21,6 +21,6 @@ public class StudentDto {
     private String name;
     private String email;
     private String password;
-    private User user;
+    private UserDto userDto;
     private List <CourseDto> courses;
 }

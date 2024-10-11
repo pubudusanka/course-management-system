@@ -27,4 +27,13 @@ public class Student {
     @ManyToMany(mappedBy = "students", cascade = CascadeType.ALL)
     private List<Course> courses;
 
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                '}';
+    }
 }

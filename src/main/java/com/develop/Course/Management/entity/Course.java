@@ -32,4 +32,12 @@ public class Course {
         this.id = id;
         this.title = title;
     }
+
+    @Override
+    public String toString() {
+        return "Course{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                '}';
+    }
 }

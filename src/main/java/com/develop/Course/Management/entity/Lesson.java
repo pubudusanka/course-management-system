@@ -21,4 +21,14 @@ public class Lesson {
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "course_id")
     private Course course;
+
+    @Override
+    public String toString() {
+        return "Lesson{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", videoUrl='" + videoUrl + '\'' +
+                ", thumbnailUrl='" + thumbnailUrl + '\'' +
+                '}';
+    }
 }
